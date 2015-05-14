@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cpm-yN-BhL">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="T19-Hl-UcD">
+            <objects>
+                <viewController id="cpm-yN-BhL" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="a6O-Xf-Gfx"/>
+                        <viewControllerLayoutGuide type="bottom" id="KYx-1q-15t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SbA-DT-jP6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPc-KS-ZXl">
+                                <rect key="frame" x="16" y="147" width="568" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wyR-xY-J9n"/>
+                                </constraints>
+                                <state key="normal" title="Ping">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ping:" destination="cpm-yN-BhL" eventType="touchUpInside" id="1pZ-0u-Gzo"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="www.baidu.com" borderStyle="roundedRect" placeholder="ping服务端地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lA1-d0-aEg">
+                                <rect key="frame" x="16" y="63" width="568" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="88X-LF-zJA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn5-2M-vBn">
+                                <rect key="frame" x="16" y="231" width="568" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3H4-SN-aIb"/>
+                                </constraints>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancel:" destination="cpm-yN-BhL" eventType="touchUpInside" id="Jqy-Qt-sqb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DPc-KS-ZXl" secondAttribute="trailing" constant="16" id="6rP-ZS-xdH"/>
+                            <constraint firstItem="Dn5-2M-vBn" firstAttribute="leading" secondItem="SbA-DT-jP6" secondAttribute="leading" constant="16" id="7a9-rJ-Ze0"/>
+                            <constraint firstItem="lA1-d0-aEg" firstAttribute="top" secondItem="a6O-Xf-Gfx" secondAttribute="bottom" constant="43" id="80w-do-3Br"/>
+                            <constraint firstItem="lA1-d0-aEg" firstAttribute="leading" secondItem="SbA-DT-jP6" secondAttribute="leading" constant="16" id="9hv-GV-eBG"/>
+                            <constraint firstItem="DPc-KS-ZXl" firstAttribute="top" secondItem="lA1-d0-aEg" secondAttribute="bottom" constant="40" id="ClM-px-Y7i"/>
+                            <constraint firstAttribute="trailing" secondItem="lA1-d0-aEg" secondAttribute="trailing" constant="16" id="Ndc-ma-kAo"/>
+                            <constraint firstAttribute="trailing" secondItem="Dn5-2M-vBn" secondAttribute="trailing" constant="16" id="cJV-XY-4Gt"/>
+                            <constraint firstItem="DPc-KS-ZXl" firstAttribute="leading" secondItem="SbA-DT-jP6" secondAttribute="leading" constant="16" id="tWZ-Su-CpN"/>
+                            <constraint firstItem="Dn5-2M-vBn" firstAttribute="top" secondItem="DPc-KS-ZXl" secondAttribute="bottom" constant="40" id="xhn-8n-mGf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hostField" destination="lA1-d0-aEg" id="BmD-b4-6K1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBW-Ra-ffc" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
